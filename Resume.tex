@@ -1,0 +1,191 @@
+ \documentclass[10pt,a4paper]{article}
+
+\usepackage[a-1b]{pdfx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage[normalem]{ulem}
+
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+\titleformat{\section}[frame]{\huge\bfseries}{}{.2em}{}
+
+\titleformat{\subsection}{\large\bfseries}{-}{0.5em}{}
+
+\titlespacing*{\subsection}
+{0pt}{.05ex}{.05ex}
+
+\definecolor{aliceblue}{rgb}{0.98, 0.98, 1}
+%\definecolor{aliceblue}{rgb}{1, 1, 1}
+
+\pagecolor{aliceblue}
+
+\renewcommand{\maketitle}
+{
+    \begin{flushleft}
+    \textbf{\Huge\theauthor}
+    \end{flushleft}
+    \begin{flushleft}
+    \small{\textbf{\faMapMarker \hspace{0.2cm} Gainesville, Fl} \hspace{2.5cm} \textbf{\faMobile \hspace{0.2cm} +1 (352)-226-1217} \\ \textbf{\faEnvelope \hspace{0.1cm} naman.arora@tutanota.com} \hspace{0.5cm} \textbf{\faGitlab \hspace{0.1cm} \href{https://gitlab.com/r0ck3r008}{https://gitlab.com/r0ck3r008}}}
+    \end{flushleft}
+}
+
+\begin{document}
+
+\title{Curriculum Vitae}
+\author{Naman Arora}
+\maketitle
+
+\begin{tcolorbox}[enhanced,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+		colback=aliceblue,colframe=blue,colbacktitle=blue,
+		title=Summary ,fonttitle=\large\bfseries,
+	boxed title style={size=small,colframe=blue} ]
+
+\begin{flushleft}
+    I am a passionate Systems Developer with keen interest in all things Databases, Networking, Operating Systems and Cybersecurity. From concurrent RDBMS to privacy protecting overlay networks, I develop innovative systems to tackle the fundamental engineering problems with my 4+ years of experience in C/C++ and GNU/Linux systems.
+\end{flushleft}
+
+%\end{tcolorbox}
+
+%\begin{tcolorbox}[enhanced,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+	%	colback=aliceblue,colframe=blue,colbacktitle=blue,
+	%	title=Technical Skills,fonttitle=\large\bfseries,
+	%boxed title style={size=small,colframe=blue} ]
+	%\begin{center}
+	%\begin{tabular}{ c c c c c c c c c c c c c}
+ %   C & $\circ$ & C++ & $\circ$ & Python & $\circ$ & Elixir & $\circ$ & Java & $\circ$ &  GNU Make & $\circ$ & Linux Kernel Programming \\
+ %   SQL & $\circ$ & Docker & $\circ$ & Git & $\circ$ & GNU/Linux  & $\circ$ &  OpenBSD & $\circ$ & Android Development & $\circ$ & Microsoft Windows\\
+	%\end{tabular}
+	%\end{center}
+\end{tcolorbox}
+
+%\section{Education}
+
+\begin{tcolorbox}[enhanced,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+		colback=aliceblue,colframe=blue,colbacktitle=blue,
+		title=Education,fonttitle=\large\bfseries,
+	boxed title style={size=small,colframe=blue} ]
+	
+	\begin{itemize}[noitemsep,nolistsep,leftmargin=0pt]
+	    \item{\textbf{Pursuing Masters in Computer and Information Sciences} \hfill \textit{August 2019 - Present}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+		\item[$\ast$]{\textbf{Ongoing GPA 3.53/4.00 from University Of Florida, Gainesville}}
+		\item[$\ast$]{Highlighted Coursework: Database System Implementation, Distributed Operating Systems, Blockchain}
+	\end{itemize}
+	\item{\textbf{Bachelor of Technology in Computer Science and Engineering} \hfill \textit{July 2015 - May 2019}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+		\item[$\ast$]{\textbf{CGPA 8.3/10.0 from SRM Institute Of Science and Technology, Chennai, India}}
+		\item[$\ast$]{Highlighted Coursework: Network Programming, Database Management Systems, Operating Systems}
+	\end{itemize}
+	\end{itemize}
+\end{tcolorbox}
+
+%\section{Skills}
+\begin{tcolorbox}[enhanced,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+		colback=aliceblue,colframe=blue,colbacktitle=blue,
+		title=Technical Skills\setlength\itemsep{-0.25em},fonttitle=\large\bfseries,
+	boxed title style={size=small,colframe=blue} ]
+
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=0pt]
+\item{\textbf{Programming/Scripting Languages:} C, Rust, C++, Python, Elixir, Java, SQL, Linux Kernel Programming, lex/yacc, Latex}
+\item{\textbf{Programs and Frameworks:} Docker, PostgreSQL, Mariadb, GNU Make, Systemd}
+\item{\textbf{Operating Systems:} GNU/Linux, Microsoft Windows, Android, OpenBSD}
+
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced,breakable,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+		colback=aliceblue,colframe=blue,colbacktitle=blue,
+		title=Publications,fonttitle=\large\bfseries,
+	boxed title style={size=small,colframe=blue}]
+
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=0pt]
+    \item{\textbf{A Relay for A SDN Controller}} \hfill \textit{February 2020}
+        \begin{itemize}[leftmargin=*]
+        \setlength\itemsep{-0.25em}
+            \item[$\ast$]{Patent Application No. 202041008146 Ref: P/19/2116 (CS.9.18) dated 10.08.19, published under Indian Patent Act, 1970}
+            \item[$\ast$]{With co-inventors Ms. Vaishnavi Moorthy, Dr. Revathi Venkataraman, Nikhil Gupta}
+	    \end{itemize}
+    \item{\textbf{An Attendance System and Method Thereof}} \hfill \textit{December 2018}
+	    \begin{itemize}[leftmargin=*]
+	    \setlength\itemsep{-0.25em}
+	        \item[$\ast$]{``Patent Office Journal dated 27th July 2018'', page No. 28230, published under Indian Patent Act, 1970}
+	        \item[$\ast$]{With co-inventors Ms. M. Gayathri, Dr. C. Malathy and Rakshit Jain}
+	    \end{itemize}
+	\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced,breakable,attach boxed title to top left={yshift=-3mm,yshifttext=-1mm},
+		colback=aliceblue,colframe=blue,colbacktitle=blue,
+		title=Projects ,fonttitle=\large\bfseries,
+	boxed title style={size=small,colframe=blue} ]
+
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=0pt]
+    
+    \item{\textbf{\href{https://gitlab.com/r0ck3r008/tfetch}{TFetch: A P2P File Sharing Network}} \hfill \textit{Ongoing}}
+    \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-0.25em}
+        \item[$\ast$]{\textit{Linux, C, P2P Networking, DHT}}
+        \item[$\ast$]{Currently working on a Tapestry DHT based P2P file sharing network aimed at providing an alternate implementation of \href{https://jami.net/}{Jami Package (Kademlia)}}
+    \end{itemize}
+    
+    \item{\textbf{\href{https://gitlab.com/r0ck3r008/database-from-scratch}{DFS: A Database Engine Written from Scratch}} \hfill \textit{April 2020}}
+    \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-0.25em}
+        \item[$\ast$]{\textit{Linux, C++, Database Systems Implementation, flex/yacc}}
+        \item[$\ast$]{Implemented a Database engine capable of processing \textbf{1GB+ or 7,000,000+ records} complete with aggregate, join and select functionalities.}
+    \end{itemize}
+    
+	\item{\textbf{\href{https://gitlab.com/r0ck3r008/cap-proj}{A Performance Benchmark of Image Encryption Algorithms in RISC-V, ARM and x86 Architectures}} \hfill \textit{December 2019}}
+	 \begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+	    \item[$\ast$]{\textit{C, Python, Image Encryption, Computer Architecture, RV8}}
+		\item[$\ast$]{Conceptualized and implemented an image encryption benchmark framework \textbf{capable of bench marking various ISA with RC4, Chirikov and Vigenere algorithms}.}
+	\end{itemize}
+
+	\item{\textbf{\href{https://gitlab.com/r0ck3r008/twitter-engine}{Twitter Engine for Highly Concurrent Systems}} \hfill \textit{December 2019}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+	    \item[$\ast$]{\textit{Elixir, Phoenix Framework, Websockets}}
+		\item[$\ast$]{Implemented a Distributed and Fault tolerant Twitter Engine \textbf{capable of hosting 100,000 users} with simultaneous multi-processing.}
+	\end{itemize}
+	
+	\item{\textbf{\href{https://gitlab.com/r0ck3r008/dos-proj}{Tapestry: A P2P Distributed Hash Table Network}} \hfill \textit{November 2019}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+	    \item[$\ast$]{\textit{Elixir, P2P Networking, DHT}}
+	    \item[$\ast$]{Developed a resilient P2P network capable of \textbf{connecting 2,000+ clients with reliable resource sharing even with 20\% failed nodes.}}
+	\end{itemize}
+	
+	\item{\textbf{\href{https://gitlab.com/r0ck3r008/blockit}{BlockIt: An OS Level Domain Blocker}} \hfill \textit{July 2019}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+	    \item[$\ast$]{\textit{Linux, C, LibCurl, NetFilter}}
+	    \item[$\ast$]{Wrote a Privacy Protecting Domain blocker \textbf{capable of fetching and blocking 80,000+ unique domains}.}
+	\end{itemize}
+	
+	\item{\textbf{\href{https://gitlab.com/r0ck3r008/sdn-proj}{Software Defined Networking: Distributed Systems and Trust Computation}} \hfill \textit{May 2019}}
+	\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{-0.25em}
+	    \item[$\ast$]{\textit{Linux, Python, Docker, SDN, Ryu}}
+		\item[$\ast$]{Successful implementation of Layer 2 Distributed SDN controller routing network with DDoS \textbf{protection from Botnet capable of simulating 4,000,000+ illegitimate packets}.}
+	\end{itemize}
+	
+	\end{itemize}
+
+\end{tcolorbox}
+
+\end{document}
