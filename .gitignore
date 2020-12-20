@@ -1,3 +1,5 @@
 pdfa.xmpi
 Resume.*
 !Resume.tex
+tmp/*
+!tmp/.gitkeep
