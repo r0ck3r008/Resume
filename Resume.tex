@@ -1,53 +1,44 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10]{Resume}
 
-\usepackage[a-1b]{pdfx}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage[margin=0.2in]{geometry}
-\usepackage{mathptmx}
-\usepackage{enumitem}
-\usepackage{fontawesome}
-\usepackage{mathptmx}
+\begin{document}
 
-\titleformat{\section}[frame]{\huge\bfseries}{}{.2em}{}
-
-\titleformat{\subsection}{\large\bfseries}{-}{0.5em}{}
-
-\titlespacing*{\subsection}
-{0pt}{.05ex}{.05ex}
-
-\renewcommand{\maketitle}
-{
+\renewcommand{\maketitle} {
 	\begin{flushleft}
 		\textbf{\Huge\theauthor}
 	\end{flushleft}
 	\begin{flushleft}
 		\small{\textbf{{\faMapMarker} \hspace{0.2cm} Gainesville, Fl} \hspace{2.5cm} \textbf{{\faMobile} \hspace{0.2cm} +1 (352)--226--1217} \\
-				\textbf{{\faEnvelope} \hspace{0.1cm} naman.arora@tutanota.com} \hspace{0.5cm}
-				\textbf{{\faGithub} \hspace{0.1cm} \href{https://github.com/r0ck3r008}{https://github.com/r0ck3r008}}}
+		\textbf{{\faEnvelope} \hspace{0.1cm} naman.arora@tutanota.com} \hspace{0.5cm}
+		\textbf{{\faGithub} \hspace{0.1cm} \href{https://github.com/r0ck3r008}{https://github.com/r0ck3r008}}}
 	\end{flushleft}
 }
-
-\titleformat{\section}
-{\Large}
-{}{0em}
-{}
-[\titlerule]
-
-\begin{document}
 
 \title{Resume}
 \author{Naman Arora}
 \maketitle
 
 
-\section{{\faUser} About Me}
-	I am a passionate Systems Developer with keen interest in all things Databases, Networking, Operating Systems and Cybersecurity. From concurrent RDBMS to privacy protecting overlay networks, I develop innovative systems to tackle the fundamental engineering problems with my 4 years of experience in C/C++ and GNU/Linux systems.
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{{\faUser} About Me}
+		I am a passionate Systems Developer with keen interest in all things Databases, Networking, Operating Systems and Cybersecurity. From concurrent RDBMS to privacy protecting overlay networks, I develop innovative systems to tackle the fundamental engineering problems with my 4+ years of experience in C/C++ and GNU/Linux systems.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip}
+		\cvsect{{\faCogs} Skills}
+	\begin{barchart}{5.5}
+		\baritem{C}{90}
+		\baritem{GNU/Linux}{90}
+		\baritem{C++}{75}
+		\baritem{Go}{60}
+		\baritem{Rust}{60}
+		\baritem{Docker}{60}
+		\baritem{Git}{50}
+	\end{barchart}
+\end{minipage}
 
-\section{{\faUniversity} Education}
+\cvsect{{\faUniversity} Education}
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item\textbf{Masters in Computer and Information Sciences \hfill \textit{August 2019 - April 2021}}
@@ -64,72 +55,62 @@
 		\end{itemize}
 \end{itemize}
 
-%\section{Skills}
-\section{{\faCogs} Skills}
-	\begin{itemize}[noitemsep,nolistsep]
-		\item\textbf{Programming/Scripting Languages:} C/C++, Go, Rust, Python, Java, SQL, lex/yacc
-		\item\textbf{Programs and Frameworks:} Docker, PostgreSQL, Mariadb
-		\item\textbf{Operating Systems:} GNU/Linux, Microsoft Windows, Android, OpenBSD
-	\end{itemize}
+\cvsect{{\faNewspaperO} Publications}
+\begin{itemize}[noitemsep,nolistsep]
+	\item\textbf{A Relay for A SDN Controller \hfill \textit{February 2020}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]Patent Application No. 202041008146 Ref: P/19/2116 (CS.9.18) dated 10.08.19, Indian Patent Act, 1970
+			\item[$\ast$]With co-inventors Ms. Vaishnavi Moorthy, Dr. Revathi Venkataraman, Nikhil Gupta
+		\end{itemize}
+	\item\textbf{An Attendance System and Method Thereof \hfill \textit{December 2018}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]``Patent Office Journal dated 27th July 2018'', page No. 28230, Indian Patent Act, 1970
+			\item[$\ast$]With co-inventors Ms. M. Gayathri, Dr. C. Malathy and Rakshit Jain
+		\end{itemize}
+\end{itemize}
 
+\cvsect{{\faCode} Projects}
+\begin{itemize}[noitemsep,nolistsep]
+	\item\textbf{KademGo \hfill \textit{Ongoing}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]\textit{Peer to Peer, Kademlia, Distributed Hash Table, Go} \hfill \href{https://github.com/r0ck3r008/kademgo}{{\scriptsize https://github.com/r0ck3r008/kademgo}}
+			\item[$\ast$]Vanilla implementation of Kademlia DHT protocol in form of a Go Library
+		\end{itemize}
 
-\section{{\faNewspaperO} Publications}
-	\begin{itemize}[noitemsep,nolistsep]
-		\item\textbf{A Relay for A SDN Controller \hfill \textit{February 2020}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]Patent Application No. 202041008146 Ref: P/19/2116 (CS.9.18) dated 10.08.19, Indian Patent Act, 1970
-				\item[$\ast$]With co-inventors Ms. Vaishnavi Moorthy, Dr. Revathi Venkataraman, Nikhil Gupta
-			\end{itemize}
-		\item\textbf{An Attendance System and Method Thereof \hfill \textit{December 2018}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]``Patent Office Journal dated 27th July 2018'', page No. 28230, Indian Patent Act, 1970
-				\item[$\ast$]With co-inventors Ms. M. Gayathri, Dr. C. Malathy and Rakshit Jain
-			\end{itemize}
-	\end{itemize}
+	\item\textbf{DFS: A Database Engine Written from Scratch \hfill \textit{April 2020}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]\textit{Linux, C++, Database Systems Implementation, flex/yacc} \hfill \href{https://github.com/r0ck3r008/database-from-scratch}{{\scriptsize https://github.com/r0ck3r008/database-from-scratch}}
+			\item[$\ast$]Database engine tested with processing \textbf{1GB or 7,000,000+ records}
+			\item[$\ast$]Complete with aggregate, join and select functionalities
+		\end{itemize}
 
-\section{{\faCode} Projects}
-	\begin{itemize}[noitemsep,nolistsep]
+	\item\textbf{A Performance Benchmark of Image Encryption Algorithms \hfill \textit{December 2019}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]\textit{C, Python, Image Encryption, Computer Architecture, RV8} \hfill \href{https://github.com/r0ck3r008/arch-perf-benchmark}{{\scriptsize https://github.com/r0ck3r008/arch-perf-benchmark}}
+			\item[$\ast$]Compares simulated \textbf{RISC-V, ARM and x86 ISA}
+			\item[$\ast$]Image encryption benchmark framework for \textbf{RC4, Chirikov and Vigenere algorithms}
+		\end{itemize}
 
-		\item\textbf{KademGo \hfill \textit{Ongoing}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]\textit{Peer to Peer, Kademlia, Distributed Hash Table, Go} \hfill \href{https://github.com/r0ck3r008/kademgo}{{\scriptsize https://github.com/r0ck3r008/kademgo}}
-				\item[$\ast$]Vanilla implementation of Kademlia DHT protocol in form of a Go Library
-			\end{itemize}
+	\item\textbf{Twitter Engine for Highly Concurrent Systems \hfill \textit{December 2019}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]\textit{Elixir, Phoenix Framework, Websockets} \hfill \href{https://github.com/r0ck3r008/twitter-engine}{{\scriptsize https://github.com/r0ck3r008/twitter-engine}}
+			\item[$\ast$]Distributed and Fault tolerant Twitter Engine \textbf{tested with 100,000 simultaneous user processes}
+		\end{itemize}
 
-		\item\textbf{DFS: A Database Engine Written from Scratch \hfill \textit{April 2020}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]\textit{Linux, C++, Database Systems Implementation, flex/yacc} \hfill \href{https://github.com/r0ck3r008/database-from-scratch}{{\scriptsize https://github.com/r0ck3r008/database-from-scratch}}
-				\item[$\ast$]Database engine tested with processing \textbf{1GB or 7,000,000+ records}
-				\item[$\ast$]Complete with aggregate, join and select functionalities
-			\end{itemize}
+	\item\textbf{Tapestry: A P2P Distributed Hash Table Network \hfill \textit{November 2019}}
+		\begin{itemize}[leftmargin=*]
+			\setlength\itemsep{-0.25em}
+			\item[$\ast$]\textit{Elixir, P2P Networking, DHT} \hfill \href{https://github.com/r0ck3r008/tapestry\_p2p}{{\scriptsize https://github.com/r0ck3r008/tapestry\_p2p}}
+			\item[$\ast$]Resilient P2P network capable of \textbf{connecting 2,000+ clients with reliable resource sharing}
+			\item[$\ast$]Reliable resource sharing even \textbf{with 20\% failed nodes}
+		\end{itemize}
 
-		\item\textbf{A Performance Benchmark of Image Encryption Algorithms \hfill \textit{December 2019}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]\textit{C, Python, Image Encryption, Computer Architecture, RV8} \hfill \href{https://github.com/r0ck3r008/arch-perf-benchmark}{{\scriptsize https://github.com/r0ck3r008/arch-perf-benchmark}}
-				\item[$\ast$]Compares simulated \textbf{RISC-V, ARM and x86 ISA}
-				\item[$\ast$]Image encryption benchmark framework for \textbf{RC4, Chirikov and Vigenere algorithms}
-			\end{itemize}
-
-		\item\textbf{Twitter Engine for Highly Concurrent Systems \hfill \textit{December 2019}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]\textit{Elixir, Phoenix Framework, Websockets} \hfill \href{https://github.com/r0ck3r008/twitter-engine}{{\scriptsize https://github.com/r0ck3r008/twitter-engine}}
-				\item[$\ast$]Distributed and Fault tolerant Twitter Engine \textbf{tested with 100,000 simultaneous user processes}
-			\end{itemize}
-
-		\item\textbf{Tapestry: A P2P Distributed Hash Table Network \hfill \textit{November 2019}}
-			\begin{itemize}[leftmargin=*]
-				\setlength\itemsep{-0.25em}
-				\item[$\ast$]\textit{Elixir, P2P Networking, DHT} \hfill \href{https://github.com/r0ck3r008/tapestry\_p2p}{{\scriptsize https://github.com/r0ck3r008/tapestry\_p2p}}
-				\item[$\ast$]Resilient P2P network capable of \textbf{connecting 2,000+ clients with reliable resource sharing}
-				\item[$\ast$]Reliable resource sharing even \textbf{with 20\% failed nodes}
-			\end{itemize}
-
-	\end{itemize}
+\end{itemize}
 
 \end{document}
