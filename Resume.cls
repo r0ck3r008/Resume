@@ -50,6 +50,12 @@
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{mathptmx}
 
+% Supress hyphenation in justified text
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
 % Other possible fonts
 %\usepackage[default]{raleway}
 %\usepackage[defaultsans]{droidsans}
