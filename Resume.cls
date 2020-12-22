@@ -28,7 +28,6 @@
 %	PAGE LAYOUT
 %----------------------------------------------------------------------------------------
 
-\usepackage[a-1b]{pdfx}
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
@@ -46,6 +45,7 @@
 %	FONTS
 %----------------------------------------------------------------------------------------
 
+\usepackage[a-1a]{pdfx}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{mathptmx}
