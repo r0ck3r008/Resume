@@ -1,5 +1,6 @@
 pdfa.xmpi
 Resume.*
+!Resume.pdf
 !Resume.tex
 !Resume.cls
 tmp/*
